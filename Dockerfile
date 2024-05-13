@@ -5,5 +5,5 @@ RUN apt-get install -y openjdk-8-jdk
 ENV JAVA_HOME /usr
 ADD apache-tomcat-8.5.100.tar.gz /root
 COPY target/gamutkart.war /root/apache-tomcat-8.5.100/webapps
-ENTRYPOINT /root/apache-tomcat-8.5.38/bin/startup.sh && bash
+ENTRYPOINT /root/apache-tomcat-8.5.100/bin/startup.sh && bash
 
